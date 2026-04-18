@@ -131,7 +131,7 @@ const App = () => {
                     
                   </button> */}
                  <a
-  href="https://docs.google.com/document/d/1g-8lXNP1yC3sXzX5j2UtPir6_9rp8Tec-FrjhZkgJs0/edit"
+  href="https://drive.google.com/file/d/1xuhknzOsde4Zma8ynlZC8_tpBBuomNer/preview"
   target="_blank"
   rel="noopener noreferrer"
   className="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"

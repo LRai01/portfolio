@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   experience: "4.5+ Years of Experience",
   email: "lavrai177@gmail.com",
   phone: "+91-8930730474",
-  github: "https://github.com/lavrai786",
+  github: "https://github.com/LRai01",
   linkedin: "https://www.linkedin.com/in/lavrai177/",
   summary: "Full-Stack Engineer with 4.5+ years of experience building scalable, secure, and responsive enterprise web applications, with hands-on backend experience using Node.js, MSSQL, and Oracle. Skilled in React.js, Vue.js, TypeScript, JavaScript, and integrating SSO, real-time communication, and multi-channel platforms. Proven ability to deliver high-performance solutions that improve user experience and operational efficiency."
 };
