@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Palette, X } from 'lucide-react';
 
 const THEMES = [
@@ -13,14 +13,25 @@ const THEMES = [
 const ColorPanel = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(() => localStorage.getItem('portfolio-theme') || 'blue');
+  const panelRef = useRef(null);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', active);
     localStorage.setItem('portfolio-theme', active);
   }, [active]);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (open && panelRef.current && !panelRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
+
   return (
-    <div className="fixed left-4 bottom-24 z-50 flex flex-col items-start gap-2">
+    <div ref={panelRef} className="fixed left-4 bottom-24 z-50 flex flex-col items-start gap-2">
       {/* Panel */}
       {open && (
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-100 dark:border-slate-700 p-4 w-44 animate-fadeIn">

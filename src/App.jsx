@@ -33,7 +33,7 @@ const App = () => {
         scrolled ? 'glass-effect shadow-sm py-3' : 'bg-transparent py-6'
       }`}>
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-          <div className="text-xl font-bold ac-gradient">
+          <div className="text-xl font-bold ac-text">
             LR
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
