@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Send, X, Bot, Loader2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { chatWithLavAI } from '../services/geminiService';
+import { chatWithLavAI } from '../services/aiService';
 
 const AIChat = () => {
   const [isOpen, setIsOpen] = useState(false);
